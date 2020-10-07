@@ -26,9 +26,10 @@
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
-    <link rel="stylesheet" href="css/landingPage.css" />
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link href="{{asset('css/landingPage.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/footer.css')}}" rel="stylesheet">
+    <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 
 
 
@@ -67,96 +68,88 @@
     </nav>
     <!--Akhir Navbar-->
 
-
-    <main>
-        <section style="margin-bottom: 100px;">
-            <div class="container produk">
-                <div class="row mt-md-5 mt-0">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <img src="/img/IMG_1805@2x.png" class="img-product img-fluid" alt="" />
-                    </div>
-                    <div class="col-md-5 item">
-                        <h1>Daisy Dress</h1>
-                        <h3>Rp 350.000</h3>
-                        <form class="size" action="index.php" method="post">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-size mt-5 mt-md-3">Size</p>
-
-                                    <div class="form-size">
-                                        <input type="radio" name="size" value="small" id="small" checked />
-                                        <label class="py-1" for="small">S</label>
-                                        <input type="radio" name="size" value="medium" id="medium" />
-                                        <label class="py-1" for="medium">M</label>
-                                        <input type="radio" name="size" value="large" id="large" />
-                                        <label class="py-1" for="large">L</label>
-                                        <input type="radio" name="size" value="extra large" id="extra-large" />
-                                        <label class="py-1" for="extra-large">XL</label>
-                                        <br>
-                                        <small>
-                                            <a href="sizeguide.html" class="size-chart">Size Chart<i class="ml-2 fas fa-ruler-combined"></i></a>
-                                        </small>
-                                        <div class="mt-3 mt-md-0 d-block d-md-none"><button type="submit" class=" btn btn-md btn-primary btn-order" style="color: #F2E1CF;">Order</button>
-                                            <a class="btn btn-md btn-outline-primary btn-cons mt-1" href="https://api.whatsapp.com/send?phone=6281333550157&text=Aku%20konsul%20dong%20">Consultation</a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="d-md-flex d-none justify-content-md-start justify-content-center">
-                                <div class="bungkus-btn">
-                                    <button type="submit" class=" btn btn-md btn-primary btn-order" style="color: #F2E1CF;">Order</button>
-                                    <br>
-                                    <a class="btn btn-md btn-outline-primary btn-cons mt-1" href="https://api.whatsapp.com/send?phone=6281333550157&text=Aku%20konsul%20dong%20">Consultation</a>
-                                </div>
-                            </div>
-                            <h5 class="mt-5" style="border-bottom: 2px solid #9b6053;">Description</h5>
-                            <p>Daisy Dress Wrap yourself in this flirty and feminine wrap dress.. The most perfect little dress for
-                                brunch dates and parties!</p>
-                        </form>
-                    </div>
-
-
-                </div>
-                <div class="col-md-1"></div>
+    <!-- Awal Page wrapper -->
+    <div class="page-wrapper">
+        <!-- awal size -->
+        <div class="container" style="margin-top: 100px;">
+            <h1 class="text-judul mt-5" style="text-align: center;">Size Guide</h1>
+            <table class="table table-hover mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">Size</th>
+                        <th scope="col">Size Equivalent</th>
+                        <th scope="col">Chest</th>
+                        <th scope="col">Waist</th>
+                        <th scope="col">Hip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">XS</th>
+                        <td>00 - 0</td>
+                        <td>32"</td>
+                        <td>24" - 25"</td>
+                        <td> 33" - 34"</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">S</th>
+                        <td> 2 - 4</td>
+                        <td> 34" - 35"</td>
+                        <td> 26" - 27"</td>
+                        <td> 35" - 37"</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <th scope="row">M</th>
+                        <td> 6 - 8</td>
+                        <td> 36" - 37"</td>
+                        <td> 28" - 29"</td>
+                        <td> 38" - 40"</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <th scope="row">L</th>
+                        <td> 10 - 12</td>
+                        <td> 38" - 39"</td>
+                        <td> 30 " - 31"</td>
+                        <td> 42" - 44"</td>
+                    </tr>
+                    </tr>
+                    <th scope="row">XL</th>
+                    <td> 14 - 16</td>
+                    <td> 40 " - 41"</td>
+                    <td> 32" - 33"</td>
+                    <td> 45" - 48"</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- akhir size -->
+        <!-- awal FAQ -->
+        <div class="container">
+            <h1 class="text-judul mt-5" style="text-align: center;">FAQ</h1>
+            <div class="tulis">
+                <h5>How do I know what size to order?</h5>
+                <p>We have a size chart here. Each product page also has a size guide section where we give notes and guidance on each particular style's fit - whether or not it has stretch, what sizes our models are wearing, and if we recommend sizing up or down. Obviously, all brands run differently, so we suggest busting out that tape measure to get the most accurate read.</p>
+                <br>
+                <h5>Can I place a gift order?</h5>
+                <p>Unfortunately this is not an option at this time. We are working to make this happen!</p>
+                <br>
+                <h5>Can I make changes to my order?</h5>
+                <p>Unfortunately, once you've placed your order it is not possible to amend any details, as our warehouse team will have already started processing your order.</p>
+                <br>
+                <h5>Will you be getting more stock of an item I am interested in?</h5>
+                <p>Some items are so demanding that we may restock some units. Therefore, we suggest signing up to our "email when available" list. You may do so by clicking on the "email me when available" link on the bottom right of the page and selecting the size as well as entering your email. In the event that this item becomes available in the size selected, you will be notified via email.</p>
+                <br>
+                <h5>Do you offer student discounts?</h5>
+                <p>Unfortunately we do not offer a student discount at this time.</p>
             </div>
-            </div>
-        </section>
-        <section style="height: 100vh;">
-            <h1 class="text-judul mt-5" style="text-align: center;">You may also like</h1>
-            <div class="container">
-                <div class="row mt-5 d-flex justify-content-center">
-                    <div class="col-md-3 ">
-                        <img src="/img/dragontop.png" class="img-fluid" alt="">
-
-                        <h5 class="d-block text-center">Cher Tank</h5>
-                        <h6 class=" text-center">Rp 119.000</h6>
-
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="/img/loveytop.png" class="img-fluid" alt="">
-
-                        <h5 class="d-block text-center">Cher Tank</h5>
-                        <h6 class=" text-center">Rp 119.000</h6>
-
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="/img/pinkytop.png" class="img-fluid" alt="">
-
-                        <h5 class="d-block text-center">Cher Tank</h5>
-                        <h6 class=" text-center">Rp 119.000</h6>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
+        </div>
+        <!-- akhir FAQ -->
+    </div>
+    <!-- Akhir Page wrapper -->
     <!-- Awal Footer -->
     <footer class="site-footer">
         <div class="container">

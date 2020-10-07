@@ -29,6 +29,7 @@
     <link href="{{URL::asset('css/landingPage.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/footer.css')}}" rel="stylesheet">
     <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 
 
 

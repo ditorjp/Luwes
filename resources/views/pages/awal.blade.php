@@ -26,9 +26,10 @@
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
-    <link rel="stylesheet" href="{{asset('css/landingPage.css')}}">
-    <link rel="stylesheet" href="{{asset('css/footer.css')}}">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link href="{{URL::asset('css/landingPage.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/footer.css')}}" rel="stylesheet">
+    <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 
 
 
