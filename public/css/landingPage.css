@@ -1,0 +1,304 @@
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hyperlink */
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:visited {
+  color: rgb(54, 52, 52);
+  background-color: transparent;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Navbar */
+.nav-item1 {
+  letter-spacing: 2px;
+  margin-right: 4vh;
+}
+
+.nav-item2 {
+  letter-spacing: 2px;
+  margin-left: 4vh;
+}
+
+/* Utility */
+section {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+}
+
+/* carousel */
+
+.satu {
+  margin-top: 100px;
+}
+
+.satu h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 81px;
+  margin-bottom: 3vh;
+  text-align: right;
+  color: #f9f3dd;
+}
+
+.satu p {
+  font-size: 15px;
+  margin-bottom: 4vh;
+  text-align: right;
+  letter-spacing: 5px;
+  color: #f9f3dd;
+}
+
+.satu a {
+  color: #f9f3dd;
+  text-align: right;
+  margin-bottom: 1vh;
+  letter-spacing: 2px;
+}
+
+.gambar1 {
+  margin-left: auto;
+  size: 15vh;
+  margin-bottom: 5vh;
+}
+
+.tomboll {
+  position: absolute;
+}
+
+.dua {
+  margin-top: 200px;
+}
+
+.dua h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 55px;
+  margin-bottom: 3vh;
+  color: #3a3531;
+  letter-spacing: 6px;
+  text-align: left;
+}
+
+.dua p {
+  font-size: 15px;
+  margin-bottom: 5vh;
+  text-align: right;
+  letter-spacing: 3px;
+  color: #3a3531;
+}
+
+.dua a {
+  color: #3a3531;
+  text-align: right;
+  margin-bottom: 19vh;
+  letter-spacing: 2px;
+}
+
+.gambar2 {
+  margin-bottom: 6vh;
+}
+
+.tiga {
+  margin-top: 150px;
+}
+
+.tiga h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 81px;
+  margin-bottom: 3vh;
+  text-align: right;
+  color: #f9f3dd;
+}
+
+.tiga p {
+  font-size: 15px;
+  margin-bottom: 5vh;
+  text-align: right;
+  color: #f9f3dd;
+  letter-spacing: 2px;
+}
+
+.tiga a {
+  color: #f9f3dd;
+  text-align: right;
+  margin-bottom: 17vh;
+  letter-spacing: 5px;
+}
+
+/* Popular Item */
+.popular-img {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+}
+.text-judul {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-style: initial;
+}
+
+.text-judul::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #d9caba;
+  width: 8%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.card-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  font-weight: bold;
+}
+
+.tulis h5 {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  /* carousel */
+
+  .satu {
+    margin-top: 200px;
+  }
+
+  .satu h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 81px;
+    margin-bottom: 3vh;
+    text-align: right;
+    color: #f9f3dd;
+  }
+
+  .satu p {
+    font-size: 15px;
+    margin-bottom: 4vh;
+    text-align: right;
+    letter-spacing: 5px;
+    color: #f9f3dd;
+  }
+
+  .satu a {
+    color: #f9f3dd;
+    text-align: right;
+    margin-bottom: 1vh;
+    letter-spacing: 2px;
+  }
+
+  .gambar1 {
+    margin-left: auto;
+    size: 15vh;
+    margin-bottom: 5vh;
+    margin-top: 100px;
+  }
+
+  .tomboll {
+    position: absolute;
+  }
+
+  .dua {
+    margin-top: 250px;
+  }
+
+  .dua h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    margin-bottom: 3vh;
+    color: #3a3531;
+    letter-spacing: 6px;
+    text-align: left;
+  }
+
+  .dua p {
+    font-size: 15px;
+    margin-bottom: 5vh;
+    text-align: right;
+    letter-spacing: 3px;
+    color: #3a3531;
+  }
+
+  .dua a {
+    color: #3a3531;
+    text-align: right;
+    margin-bottom: 19vh;
+    letter-spacing: 2px;
+  }
+
+  .gambar2 {
+    margin-bottom: 6vh;
+    margin-top: 150px;
+  }
+
+  .tiga {
+    margin-top: 150px;
+  }
+
+  .tiga h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 81px;
+    margin-bottom: 3vh;
+    text-align: right;
+    color: #f9f3dd;
+  }
+
+  .tiga p {
+    font-size: 15px;
+    margin-bottom: 5vh;
+    text-align: right;
+    color: #f9f3dd;
+    letter-spacing: 2px;
+  }
+
+  .tiga a {
+    color: #f9f3dd;
+    text-align: right;
+    margin-bottom: 17vh;
+    letter-spacing: 5px;
+  }
+
+  .page-wrapper {
+    min-height: 100%;
+  }
+}
+@media (min-width: 1360px) {
+  /* carousel */
+  .car {
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 1560px) {
+  /* carousel */
+  .car {
+    transform: scale(1);
+  }
+}
