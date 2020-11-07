@@ -26,7 +26,7 @@
              <div class="col-sm-12 col-md-6">
                  <h5>Join Our Mailing List</h5>
                  <p class="text-justify">
-                     <div id="mc_embed_signup">
+                     <div id="mc_embed_signup" style="background-color:rgba(0, 0, 0, 0);">
                          <form action="https://gmail.us17.list-manage.com/subscribe/post?u=a98f2c604376557425024927c&amp;id=4d9aaee470" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                              <div id="mc_embed_signup_scroll">
                                  <h2>Subscribe</h2>
